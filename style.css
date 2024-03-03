@@ -1,12 +1,20 @@
+@import url('https://fonts.cdnfonts.com/css/homer-simpson-revised');
 body {
-    font-family: Arial, sans-serif;
-  }
-     
+  font-family: 'Homer Simpson Revised', sans-serif;      
+  font-size: 24px;                                      
+    font-weight: 400;
+    font-style: normal;
+  background-image: url(FONDO.png);
+    background-position: top;
+    background-attachment: fixed;
+  background-size: cover ;
+    background-repeat: no-repeat;
+}
   h1 {
     text-align: center;
     margin-top: 50px;
   }
-     
+
   #guess-input {
     display: block;
     margin: 0 auto 20px;
@@ -21,29 +29,51 @@ body {
     margin: 0 auto;
     padding: 10px 20px;
     font-size: 18px;
-    background-color: #0CBABA;
+    background-color: #730bb0;
     color: #fff;
     border: none;
     border-radius: 3px;
   }
-     
   button:active {
       transform: scale(0.95);
   }
+   
+  #mi-imagen {
+    background-image: url(mario.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  } 
+ #guess-button:disabled {
+    background-color: #3d3a3a;
+}
      
   .letter {
-      border: 1px solid black;
-      padding: 3px;
-      margin: 3px;
-      min-width: 20px;
+      display: inline-block;
+      width: 40px; 
+      height: 40px; 
       text-align: center;
-      display: inline-block
+      margin: 2px;
+      font-size: 24px; 
+      line-height: 40px; 
+      border-radius: 4px;
   }
      
   .row{
-      margin-bottom: 10px;
+      margin-bottom: 20px;
   }
      
   .input-area{
       margin: 30px;
   }
+  #grid {
+    margin: 0 auto; 
+    text-align: center; 
+}
+
+.centered {
+  text-align: center;
+}
+.GAMEOVER {
+  color: rgb(239, 234, 234); 
+}
